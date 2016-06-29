@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using lug.io.Domain;
+﻿using lug.io.Domain;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Identity.EntityFramework;
@@ -11,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using lug.io.MVC.Services;
+using lug.io.ViewModel.AutoMapper;
 
 namespace lug.io.MVC
 {
@@ -101,6 +98,9 @@ namespace lug.io.MVC
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            // Kickstart AutoMapper
+            AutoMapperConfig.MapAll();
         }
 
         // Entry point for the application.

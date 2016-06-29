@@ -3,6 +3,21 @@
   "version": 2,
   "targets": {
     "DNX,Version=v4.5.1": {
+      "AutoMapper/4.0.0-ci1038": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/AutoMapper.dll": {}
+        }
+      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -147,6 +162,14 @@
           "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
           "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final"
+        }
+      },
+      "lug.io.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AutoMapper": "4.0.0-ci1038",
+          "lug.io.Domain": "1.0.0"
         }
       },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
@@ -2069,6 +2092,34 @@
       }
     },
     "DNXCore,Version=v5.0": {
+      "AutoMapper/4.0.0-ci1038": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Concurrent": "4.0.10-beta-22822",
+          "System.Collections.Specialized": "4.0.0-beta-22822",
+          "System.ComponentModel.TypeConverter": "4.0.0-beta-22822",
+          "System.Diagnostics.Debug": "4.0.10-beta-22822",
+          "System.Linq": "4.0.0-beta-22822",
+          "System.Linq.Expressions": "4.0.10-beta-22822",
+          "System.Linq.Queryable": "4.0.0-beta-22822",
+          "System.ObjectModel": "4.0.10-beta-22822",
+          "System.Reflection": "4.0.10-beta-22822",
+          "System.Reflection.Emit": "4.0.0-beta-22822",
+          "System.Reflection.Extensions": "4.0.0-beta-22822",
+          "System.Reflection.Primitives": "4.0.0-beta-22822",
+          "System.Reflection.TypeExtensions": "4.0.0-beta-22822",
+          "System.Runtime": "4.0.20-beta-22822",
+          "System.Runtime.Extensions": "4.0.10-beta-22822",
+          "System.Text.RegularExpressions": "4.0.10-beta-22822",
+          "System.Threading": "4.0.10-beta-22822"
+        },
+        "compile": {
+          "lib/dnxcore50/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/AutoMapper.dll": {}
+        }
+      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -2185,6 +2236,19 @@
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
           "Microsoft.CSharp": "4.0.1-beta-23409",
           "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "System.Collections": "4.0.11-beta-23409",
+          "System.Linq": "4.0.1-beta-23409",
+          "System.Runtime": "4.0.21-beta-23409",
+          "System.Threading": "4.0.11-beta-23409"
+        }
+      },
+      "lug.io.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": "DNXCore,Version=v5.0",
+        "dependencies": {
+          "AutoMapper": "4.0.0-ci1038",
+          "lug.io.Domain": "1.0.0",
+          "Microsoft.CSharp": "4.0.1-beta-23409",
           "System.Collections": "4.0.11-beta-23409",
           "System.Linq": "4.0.1-beta-23409",
           "System.Runtime": "4.0.21-beta-23409",
@@ -3811,6 +3875,24 @@
           "lib/dotnet/System.Collections.NonGeneric.dll": {}
         }
       },
+      "System.Collections.Specialized/4.0.0-beta-23019": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.NonGeneric": "4.0.0-beta-23019",
+          "System.Globalization": "4.0.10-beta-23019",
+          "System.Globalization.Extensions": "4.0.0-beta-23019",
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime": "4.0.20-beta-23019",
+          "System.Runtime.Extensions": "4.0.10-beta-23019",
+          "System.Threading": "4.0.10-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Collections.Specialized.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Collections.Specialized.dll": {}
+        }
+      },
       "System.ComponentModel/4.0.1-beta-23516": {
         "type": "package",
         "dependencies": {
@@ -4802,6 +4884,21 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x86": {
+      "AutoMapper/4.0.0-ci1038": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/AutoMapper.dll": {}
+        }
+      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -4946,6 +5043,14 @@
           "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
           "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final"
+        }
+      },
+      "lug.io.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AutoMapper": "4.0.0-ci1038",
+          "lug.io.Domain": "1.0.0"
         }
       },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
@@ -6871,6 +6976,21 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x64": {
+      "AutoMapper/4.0.0-ci1038": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/AutoMapper.dll": {}
+        }
+      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -7015,6 +7135,14 @@
           "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
           "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final"
+        }
+      },
+      "lug.io.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AutoMapper": "4.0.0-ci1038",
+          "lug.io.Domain": "1.0.0"
         }
       },
       "Microsoft.AspNet.Antiforgery/1.0.0-rc1-final": {
@@ -8940,6 +9068,34 @@
       }
     },
     "DNXCore,Version=v5.0/win7-x86": {
+      "AutoMapper/4.0.0-ci1038": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Concurrent": "4.0.10-beta-22822",
+          "System.Collections.Specialized": "4.0.0-beta-22822",
+          "System.ComponentModel.TypeConverter": "4.0.0-beta-22822",
+          "System.Diagnostics.Debug": "4.0.10-beta-22822",
+          "System.Linq": "4.0.0-beta-22822",
+          "System.Linq.Expressions": "4.0.10-beta-22822",
+          "System.Linq.Queryable": "4.0.0-beta-22822",
+          "System.ObjectModel": "4.0.10-beta-22822",
+          "System.Reflection": "4.0.10-beta-22822",
+          "System.Reflection.Emit": "4.0.0-beta-22822",
+          "System.Reflection.Extensions": "4.0.0-beta-22822",
+          "System.Reflection.Primitives": "4.0.0-beta-22822",
+          "System.Reflection.TypeExtensions": "4.0.0-beta-22822",
+          "System.Runtime": "4.0.20-beta-22822",
+          "System.Runtime.Extensions": "4.0.10-beta-22822",
+          "System.Text.RegularExpressions": "4.0.10-beta-22822",
+          "System.Threading": "4.0.10-beta-22822"
+        },
+        "compile": {
+          "lib/dnxcore50/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/AutoMapper.dll": {}
+        }
+      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -9056,6 +9212,19 @@
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
           "Microsoft.CSharp": "4.0.1-beta-23409",
           "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "System.Collections": "4.0.11-beta-23409",
+          "System.Linq": "4.0.1-beta-23409",
+          "System.Runtime": "4.0.21-beta-23409",
+          "System.Threading": "4.0.11-beta-23409"
+        }
+      },
+      "lug.io.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": "DNXCore,Version=v5.0",
+        "dependencies": {
+          "AutoMapper": "4.0.0-ci1038",
+          "lug.io.Domain": "1.0.0",
+          "Microsoft.CSharp": "4.0.1-beta-23409",
           "System.Collections": "4.0.11-beta-23409",
           "System.Linq": "4.0.1-beta-23409",
           "System.Runtime": "4.0.21-beta-23409",
@@ -11056,6 +11225,24 @@
           "lib/dotnet/System.Collections.NonGeneric.dll": {}
         }
       },
+      "System.Collections.Specialized/4.0.0-beta-23019": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.NonGeneric": "4.0.0-beta-23019",
+          "System.Globalization": "4.0.10-beta-23019",
+          "System.Globalization.Extensions": "4.0.0-beta-23019",
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime": "4.0.20-beta-23019",
+          "System.Runtime.Extensions": "4.0.10-beta-23019",
+          "System.Threading": "4.0.10-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Collections.Specialized.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Collections.Specialized.dll": {}
+        }
+      },
       "System.ComponentModel/4.0.1-beta-23516": {
         "type": "package",
         "dependencies": {
@@ -12180,6 +12367,34 @@
       }
     },
     "DNXCore,Version=v5.0/win7-x64": {
+      "AutoMapper/4.0.0-ci1038": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Concurrent": "4.0.10-beta-22822",
+          "System.Collections.Specialized": "4.0.0-beta-22822",
+          "System.ComponentModel.TypeConverter": "4.0.0-beta-22822",
+          "System.Diagnostics.Debug": "4.0.10-beta-22822",
+          "System.Linq": "4.0.0-beta-22822",
+          "System.Linq.Expressions": "4.0.10-beta-22822",
+          "System.Linq.Queryable": "4.0.0-beta-22822",
+          "System.ObjectModel": "4.0.10-beta-22822",
+          "System.Reflection": "4.0.10-beta-22822",
+          "System.Reflection.Emit": "4.0.0-beta-22822",
+          "System.Reflection.Extensions": "4.0.0-beta-22822",
+          "System.Reflection.Primitives": "4.0.0-beta-22822",
+          "System.Reflection.TypeExtensions": "4.0.0-beta-22822",
+          "System.Runtime": "4.0.20-beta-22822",
+          "System.Runtime.Extensions": "4.0.10-beta-22822",
+          "System.Text.RegularExpressions": "4.0.10-beta-22822",
+          "System.Threading": "4.0.10-beta-22822"
+        },
+        "compile": {
+          "lib/dnxcore50/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/AutoMapper.dll": {}
+        }
+      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -12296,6 +12511,19 @@
           "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
           "Microsoft.CSharp": "4.0.1-beta-23409",
           "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "System.Collections": "4.0.11-beta-23409",
+          "System.Linq": "4.0.1-beta-23409",
+          "System.Runtime": "4.0.21-beta-23409",
+          "System.Threading": "4.0.11-beta-23409"
+        }
+      },
+      "lug.io.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": "DNXCore,Version=v5.0",
+        "dependencies": {
+          "AutoMapper": "4.0.0-ci1038",
+          "lug.io.Domain": "1.0.0",
+          "Microsoft.CSharp": "4.0.1-beta-23409",
           "System.Collections": "4.0.11-beta-23409",
           "System.Linq": "4.0.1-beta-23409",
           "System.Runtime": "4.0.21-beta-23409",
@@ -14296,6 +14524,24 @@
           "lib/dotnet/System.Collections.NonGeneric.dll": {}
         }
       },
+      "System.Collections.Specialized/4.0.0-beta-23019": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.NonGeneric": "4.0.0-beta-23019",
+          "System.Globalization": "4.0.10-beta-23019",
+          "System.Globalization.Extensions": "4.0.0-beta-23019",
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime": "4.0.20-beta-23019",
+          "System.Runtime.Extensions": "4.0.10-beta-23019",
+          "System.Threading": "4.0.10-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Collections.Specialized.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Collections.Specialized.dll": {}
+        }
+      },
       "System.ComponentModel/4.0.1-beta-23516": {
         "type": "package",
         "dependencies": {
@@ -15424,6 +15670,52 @@
     "lug.io.Domain/1.0.0": {
       "type": "project",
       "path": "../lug.io.Domain/project.json"
+    },
+    "lug.io.ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../lug.io.ViewModel/project.json"
+    },
+    "AutoMapper/4.0.0-ci1038": {
+      "type": "package",
+      "sha512": "1vOZT1AaeTeeiuWYXArVZnjWUTQHyP4+xYVFw7KrAD7wjPVH0V1b8H9gJ1w0lMVymaSVPopALHY0RSO3VVW9wQ==",
+      "files": [
+        "AutoMapper.4.0.0-ci1038.nupkg",
+        "AutoMapper.4.0.0-ci1038.nupkg.sha512",
+        "AutoMapper.nuspec",
+        "lib/dnx451/AutoMapper.dll",
+        "lib/dnx451/AutoMapper.pdb",
+        "lib/dnx451/AutoMapper.xml",
+        "lib/dnxcore50/AutoMapper.dll",
+        "lib/dnxcore50/AutoMapper.pdb",
+        "lib/dnxcore50/AutoMapper.xml",
+        "lib/MonoAndroid/AutoMapper.dll",
+        "lib/MonoAndroid/AutoMapper.pdb",
+        "lib/MonoAndroid/AutoMapper.XML",
+        "lib/MonoTouch/AutoMapper.dll",
+        "lib/MonoTouch/AutoMapper.pdb",
+        "lib/MonoTouch/AutoMapper.XML",
+        "lib/net45/AutoMapper.dll",
+        "lib/net45/AutoMapper.pdb",
+        "lib/net45/AutoMapper.xml",
+        "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+Xamarin.iOS10+MonoTouch10/AutoMapper.dll",
+        "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+Xamarin.iOS10+MonoTouch10/AutoMapper.pdb",
+        "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+Xamarin.iOS10+MonoTouch10/AutoMapper.xml",
+        "lib/sl5/AutoMapper.dll",
+        "lib/sl5/AutoMapper.pdb",
+        "lib/sl5/AutoMapper.xml",
+        "lib/windows81/AutoMapper.dll",
+        "lib/windows81/AutoMapper.pdb",
+        "lib/windows81/AutoMapper.XML",
+        "lib/wp8/AutoMapper.dll",
+        "lib/wp8/AutoMapper.pdb",
+        "lib/wp8/AutoMapper.xml",
+        "lib/wpa81/AutoMapper.dll",
+        "lib/wpa81/AutoMapper.pdb",
+        "lib/wpa81/AutoMapper.xml",
+        "lib/Xamarin.iOS10/AutoMapper.dll",
+        "lib/Xamarin.iOS10/AutoMapper.pdb",
+        "lib/Xamarin.iOS10/AutoMapper.XML"
+      ]
     },
     "EntityFramework.Commands/7.0.0-rc1-final": {
       "type": "package",
@@ -17562,6 +17854,19 @@
         "System.Collections.NonGeneric.4.0.0.nupkg",
         "System.Collections.NonGeneric.4.0.0.nupkg.sha512",
         "System.Collections.NonGeneric.nuspec"
+      ]
+    },
+    "System.Collections.Specialized/4.0.0-beta-23019": {
+      "type": "package",
+      "sha512": "Z79DO5DQ9Z58p/1n0wW0szP+4UdoJOxGVpX+D3gFXW7g11i+TyZKqg5/OcIjbmgB9RvJkDJBTOs/xtXIu/CZWw==",
+      "files": [
+        "lib/dotnet/System.Collections.Specialized.dll",
+        "lib/net46/System.Collections.Specialized.dll",
+        "ref/dotnet/System.Collections.Specialized.dll",
+        "ref/net46/System.Collections.Specialized.dll",
+        "System.Collections.Specialized.4.0.0-beta-23019.nupkg",
+        "System.Collections.Specialized.4.0.0-beta-23019.nupkg.sha512",
+        "System.Collections.Specialized.nuspec"
       ]
     },
     "System.ComponentModel/4.0.1-beta-23516": {
@@ -21245,6 +21550,7 @@
   "projectFileDependencyGroups": {
     "": [
       "lug.io.Domain >= 1.0.0-*",
+      "lug.io.ViewModel >= 1.0.0-*",
       "Microsoft.AspNet.Authentication.Cookies >= 1.0.0-rc1-final",
       "Microsoft.AspNet.Diagnostics.Entity >= 7.0.0-rc1-final",
       "Microsoft.AspNet.Identity.EntityFramework >= 3.0.0-rc1-final",
