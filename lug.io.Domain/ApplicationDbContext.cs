@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Data.Entity;
 
-namespace lug.io.MVC.Models
+namespace lug.io.Domain
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
