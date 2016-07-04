@@ -1,10 +1,32 @@
 {
-  "name": "ASP.NET",
+  "name": "lug.io",
   "private": true,
   "dependencies": {
     "bootstrap": "3.3.5",
     "jquery": "2.1.4",
     "jquery-validation": "1.14.0",
-    "jquery-validation-unobtrusive": "3.2.4"
-  }
+    "jquery-validation-unobtrusive": "3.2.4",
+    "knockout": "^3.4.0",
+    "knockout-mapping": "^2.4.1",
+    "select2": "^4.0.3"
+  },
+  "homepage": "http://lug.io",
+  "authors": [
+    "Daniel Brown <csengineer13@gmail.com>"
+  ],
+  "description": "recipe and fitness website",
+  "main": "",
+  "keywords": [
+    "recipe",
+    "fitness"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "wwwroot/lib",
+    "test",
+    "tests"
+  ]
 }
