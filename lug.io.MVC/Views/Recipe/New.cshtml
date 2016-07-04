@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form>
+    <div class="form-group">
+        <label for="RecipeName">Name</label>
+        <input type="text" name="RecipeName" id="RecipeName"/>
+    </div>
+    <div class="form-group">
+        <label for="RecipeDescription">Description</label>
+        <input type="text" name="RecipeDescription" id="RecipeDescription" />
+    </div>
+    <div class="form-group">
+        <label for="DefaultServings">Servings</label>
+        <input type="range" name="DefaultServings" id="DefaultServings" min="1" max="99" step="1" />
+    </div>
+    <div class="form-group">
+        <label for="PrepTimeMinutes">Preparation Time</label>
+        <input type="range" name="PrepTimeMinutes" id="PrepTimeMinutes" min="0" max="200" step="5" />
+    </div>
+    <div class="form-group">
+        <label for="CookTimeMinutes">Cook Time</label>
+        <input type="range" name="CookTimeMinutes" id="CookTimeMinutes" min="0" max="200" step="5" />
+    </div>
+                    {Author}
+
+                    {Tags} --> Select2
+                    {RecipeImages} ??
+                    {Ingredients}
+                    {Directions}
+                    {Reviews}
+</form>

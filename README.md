@@ -18,3 +18,5 @@ Other Helpful commands:
 
 To See Entity Framework commands:
 `dnx ef` in "Domain" project folder
+
+http://stackoverflow.com/questions/30851344/how-can-i-do-an-entity-framework-core-project-and-add-a-migration-in-visual-stud
