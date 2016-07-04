@@ -2,32 +2,51 @@
     ViewData["Title"] = "Home Page";
 }
 
-<form>
+<form data-bind="with: ItemDetail">
+    <!-- Start Drop Area For Images -->
+    {RecipeImages} ??
+    <div id="box">Drag & Drop files from your machine on this box.</div>
+    <br/>
+    <input name="RecipeImage" id="RecipeImage" type="button" value="Upload Selected Files"/>
+    <!-- End Drop Area For Images -->
+
+    <!-- Meta -->
+    {Author} --> Whoever is submitting
     <div class="form-group">
         <label for="RecipeName">Name</label>
-        <input type="text" name="RecipeName" id="RecipeName"/>
+        <input type="text" class="form-control" name="RecipeName" id="RecipeName" data-bind="value: Name"/>
+    </div>
+    <div class="form-group">
+        <label for="Tags">Tags</label>
+        <select class="form-control" name="Tags" id="Tags">
+            <option>Breakfast</option>
+            <option>Lunch/Dinner</option>
+            <option>Snack</option>
+            <option>Beverage</option>
+        </select>
     </div>
     <div class="form-group">
         <label for="RecipeDescription">Description</label>
-        <input type="text" name="RecipeDescription" id="RecipeDescription" />
+        <input type="text" class="form-control" name="RecipeDescription" id="RecipeDescription"/>
     </div>
     <div class="form-group">
         <label for="DefaultServings">Servings</label>
-        <input type="range" name="DefaultServings" id="DefaultServings" min="1" max="99" step="1" />
+        <input type="range" class="form-control" name="DefaultServings" id="DefaultServings" min="1" max="99" step="1"/>
     </div>
     <div class="form-group">
         <label for="PrepTimeMinutes">Preparation Time</label>
-        <input type="range" name="PrepTimeMinutes" id="PrepTimeMinutes" min="0" max="200" step="5" />
+        <input type="range" class="form-control" name="PrepTimeMinutes" id="PrepTimeMinutes" min="0" max="200" step="5"/>
     </div>
     <div class="form-group">
         <label for="CookTimeMinutes">Cook Time</label>
-        <input type="range" name="CookTimeMinutes" id="CookTimeMinutes" min="0" max="200" step="5" />
+        <input type="range" class="form-control" name="CookTimeMinutes" id="CookTimeMinutes" min="0" max="200" step="5"/>
     </div>
-                    {Author}
 
-                    {Tags} --> Select2
-                    {RecipeImages} ??
-                    {Ingredients}
-                    {Directions}
-                    {Reviews}
+    <!-- Ingredients -->
+    // Add IngredientDto
+    // NewRecipeVM should contain a List with a single blank ingredient item
+    {Ingredients}
+
+    <!-- Directions -->
+    {Directions}
 </form>

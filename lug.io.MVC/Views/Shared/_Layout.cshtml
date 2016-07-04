@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using System.Configuration
+@model lug.io.ViewModel.ViewModelNonGenericBase
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -52,7 +54,18 @@
         <script src="~/lib/knockout/dist/knockout.js"></script>
         <script src="~/lib/knockout-mapping/build/output/knockout.mapping-latest.js"></script>
         <script src="~/lib/select2/dist/js/select2.js"></script>
+
         <script src="~/js/site.js" asp-append-version="true"></script>
+
+        @if (Model != null)
+        {
+            <script type="text/javascript">
+			window.appnamespace = 'lug';
+			(function () {
+				lug['@Model.Title'] = new lug['@Model.Title'](@Html.Raw(Model.ToJson()));
+			}(window[window.appnamespace] = window[window.appnamespace] || {}));
+            </script>
+        }
     </environment>
     <environment names="Staging,Production">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"
@@ -63,9 +76,19 @@
         <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"
                 asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
-
-
+        
         </script>
+
+        @if (Model != null)
+        {
+            <script type="text/javascript">
+			window.appnamespace = 'lug';
+			(function () {
+				lug['@Model.Title'] = new lug['@Model.Title'](@Html.Raw(Model.ToJson()));
+			}(window[window.appnamespace] = window[window.appnamespace] || {}));
+            </script>
+        }
+
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 

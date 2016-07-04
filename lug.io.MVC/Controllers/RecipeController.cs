@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNet.Mvc;
+﻿using lug.io.ViewModel.ViewModels;
+using Microsoft.AspNet.Mvc;
 
 namespace lug.io.MVC.Controllers
 {
@@ -12,9 +13,9 @@ namespace lug.io.MVC.Controllers
         public IActionResult New()
         {
             ViewData["Message"] = "Your application description page.";
-            //var vm = new NewRecipeViewModel();
+            var vm = new RecipeViewModel();
 
-            return View();
+            return View(vm);
         }
     }
 }
