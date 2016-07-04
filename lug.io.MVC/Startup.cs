@@ -1,4 +1,5 @@
 ﻿using lug.io.Domain;
+using lug.io.Domain.Models;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Identity.EntityFramework;

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
+﻿using lug.io.Domain.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Data.Entity;
 
 namespace lug.io.Domain
@@ -12,5 +13,14 @@ namespace lug.io.Domain
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
+
+        public DbSet<Recipe> Recipes { get; set; } 
+        public DbSet<Ingredient> Ingredients { get; set; }
+        public DbSet<FoodItem> FoodItems { get; set; }
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<Tag> Tags { get; set; } 
+        public DbSet<RecipeImage> RecipeImages { get; set; } 
+        public DbSet<Direction> Directions { get; set; }
+        public DbSet<Review> Reviews { get; set; } 
     }
 }

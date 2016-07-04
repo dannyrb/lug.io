@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using lug.io.Domain;
+using lug.io.Domain.Models;
 using lug.io.ViewModel.DTO;
 
 namespace lug.io.ViewModel.AutoMapper
